@@ -48,6 +48,10 @@ img {
 
 button {
   padding: 0;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 #categories {
@@ -169,9 +173,6 @@ button {
   letter-spacing: 0.64px;
   border-radius: 8px;
   background-color: #4E75FF;
-  border: none;
-  outline: none;
-  cursor: pointer;
   transition: background-color 300ms ease-in-out;
 }
 
@@ -192,15 +193,95 @@ button {
   letter-spacing: 0.64px;
   border-radius: 8px;
   background-color: #4E75FF;
-  border: none;
-  outline: none;
-  cursor: pointer;
   transition: background-color 300ms ease-in-out;
   border-radius: 8px;
-  background: #4E75FF;
+  background-color: #4E75FF;
 }
 
 .change-color:hover,
 .change-color:focus {
   background-color: #6C8CFF;
+}
+
+#controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  gap: 16px;
+  width: 486px;
+  border-radius: 8px;
+  background-color: #F6F6FE;
+  margin-bottom: 16px;
+}
+
+#controls input {
+  color: #2E2F42;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid #808080;
+  outline: none;
+  transition: border-color 300ms ease-in-out;
+}
+
+#controls input:hover,
+#controls input:focus {
+  border-color: #000000;
+}
+
+#controls button[data-create] {
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  width: 120px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: #4E75FF;
+  transition: background-color 300ms ease-in-out;
+}
+
+#controls button[data-create]:hover,
+#controls button[data-create]:focus {
+  background-color: #6C8CFF;
+}
+
+#controls button[data-destroy] {
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  width: 120px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: #FF4E4E;
+  transition: background-color 300ms ease-in-out;
+}
+
+#controls button[data-destroy]:hover,
+#controls button[data-destroy]:focus {
+  background-color: #FF7070;
+}
+
+#boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 44px;
+  padding: 32px;
+  border-radius: 8px;
+  background-color: #F6F6FE;
 }
